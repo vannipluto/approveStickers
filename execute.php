@@ -45,7 +45,7 @@ if(isset($message['sticker'])) {
       curl_setopt($ch, CURLOPT_POSTFIELDS, $postFieldsForDelete);
      
       // read curl response
-      // $output = curl_exec($ch);
+      $output = curl_exec($ch);
      
       // $textOut = $firstname . ' ' . $lastname . ' hai usato uno stikers non ammesso in questo gruppo (da ' . $setName . ')! (cancellato)';
 
