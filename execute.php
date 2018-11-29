@@ -45,14 +45,14 @@ if(isset($message['sticker'])) {
       curl_setopt($ch, CURLOPT_POSTFIELDS, $postFieldsForDelete);
      
       // read curl response
-      $output = curl_exec($ch);
+      // $output = curl_exec($ch);
      
-      $textOut = $firstname . ' ' . $lastname . ' hai usato uno stikers non ammesso in questo gruppo (da ' . $setName . ')! (cancellato)';
+      // $textOut = $firstname . ' ' . $lastname . ' hai usato uno stikers non ammesso in questo gruppo (da ' . $setName . ')! (cancellato)';
 
-      header("Content-Type: application/json");
-      $parameters = array('chat_id' => $chatId, 'text' => $textOut);
-      $parameters["method"] = "sendMessage";
-      echo json_encode($parameters);
+      // header("Content-Type: application/json");
+      // $parameters = array('chat_id' => $chatId, 'text' => $textOut);
+      // $parameters["method"] = "sendMessage";
+      // echo json_encode($parameters);
    }
   
 }
