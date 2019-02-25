@@ -26,7 +26,7 @@ if($text == "/start") {
   exit;
 }
 
-$bannedStick = array("DBDnapoli", "follettinas", "Pklspk", "KawaiiDeath", "VkFace", "CheSchifoPack", "Ginofiga", "ITAStickers", "Salvini", "chescifo", "Animushit", "Sexsting_NBstickeria");
+$bannedStick = array("ahegaoni", "DBDnapoli", "follettinas", "Pklspk", "KawaiiDeath", "VkFace", "CheSchifoPack", "Ginofiga", "ITAStickers", "Salvini", "chescifo", "Animushit", "Sexsting_NBstickeria");
 
 if(isset($message['sticker'])) {
   
