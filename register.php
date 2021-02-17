@@ -1,7 +1,7 @@
 <?php
 
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'https://{PROJECT NAME}.000webhostapp.com/webhook.php';
+$WEBHOOK_URL = 'https://approvestickers.herokuapp.com/execute.php';
 $BOT_TOKEN = '1579566652:AAFB8i2NJ2eF96608SfweT-UKNhhUVrdVXA';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
