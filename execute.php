@@ -57,4 +57,5 @@ if(isset($message['sticker'])) {
    }
   
 }
+echo "...";
 ?>
