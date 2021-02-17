@@ -34,18 +34,18 @@ if(isset($message['sticker'])) {
    $setName = $message['sticker']['set_name'];
   
    if (in_array($setName, $bannedStick)) {
-      $botUrl = "https://api.telegram.org/bot" . BOT_TOKEN . "/deleteMessage";
+      ///$botUrl = "https://api.telegram.org/bot" . BOT_TOKEN . "/deleteMessage";
 
-      $postFieldsForDelete = array('chat_id' => $chatId, 'message_id' => $messageId);
+      ///$postFieldsForDelete = array('chat_id' => $chatId, 'message_id' => $messageId);
 
-      $ch = curl_init(); 
-      curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type:multipart/form-data"));
-      curl_setopt($ch, CURLOPT_URL, $botUrl); 
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-      curl_setopt($ch, CURLOPT_POSTFIELDS, $postFieldsForDelete);
+      ///$ch = curl_init(); 
+      ///curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type:multipart/form-data"));
+      ///curl_setopt($ch, CURLOPT_URL, $botUrl); 
+      ///curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+      ///curl_setopt($ch, CURLOPT_POSTFIELDS, $postFieldsForDelete);
      
       // read curl response
-      $output = curl_exec($ch);
+      ///$output = curl_exec($ch);
      
       // $textOut = $firstname . ' ' . $lastname . ' hai usato uno stikers non ammesso in questo gruppo (da ' . $setName . ')! (cancellato)';
 
@@ -57,10 +57,5 @@ if(isset($message['sticker'])) {
    }
   
 }
-
-header("Content-Type: application/json");
-$parameters = array('chat_id' => $chatId, 'text' => '...');
-$parameters["method"] = "sendMessage";
-echo json_encode($parameters);
 
 ?>
