@@ -58,6 +58,7 @@ if(isset($message['sticker'])) {
   
 }
 
+header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, 'text' => '...');
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
