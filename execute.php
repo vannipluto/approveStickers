@@ -53,6 +53,7 @@ if(isset($message['sticker'])) {
       // $parameters = array('chat_id' => $chatId, 'text' => $textOut);
       // $parameters["method"] = "sendMessage";
       // echo json_encode($parameters);
+     echo "...";
    }
   
 }
