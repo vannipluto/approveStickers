@@ -7,7 +7,7 @@ if(!$update)
   exit;
 }
 
-define("BOT_TOKEN", "630788166:AAGJ0s62LlXbEOQmMOaUi-bRgVTYVZLPdEs");
+define("BOT_TOKEN", "1579566652:AAFB8i2NJ2eF96608SfweT-UKNhhUVrdVXA");
 
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
